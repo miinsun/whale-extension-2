@@ -1,0 +1,33 @@
+{
+    "manifest_version": 2,	
+    "name": "StudyOn",
+    "version": "1.0.0",	
+    "description": "웨일대학 2팀 - 대학생 학습 관리 확장 앱.",
+    "icons": {
+      "16": "images/short_logo.png",
+      "48": "images/short_logo.png",
+      "128": "images/short_logo.png"
+    },
+
+    "sidebar_action": {
+        "default_page": "src/html/main.html", 
+        "default_icon": {               
+            "16": "images/short_logo.png"
+        },
+
+        "default_title": "StudyOn",
+        "use_navigation_bar": false,  
+        "mobile_user_agent": false 
+    },
+    "background" : {
+      "scripts" : ["src/js/background.js"],
+      "persistent": false
+    },
+    "permissions": [
+      "notifications",
+      "<all_urls>",
+      "http://localhost/",
+      "http://*/*", 
+      "https://*/*"
+    ]    
+  }

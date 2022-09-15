@@ -1,0 +1,371 @@
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+}
+
+body{
+    background-color: #F2F3F5;
+}
+
+#header-wrapper {
+    position: absolute;
+    width: 410px;
+    height: 49px;
+    left: 0px;
+    top: 0px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 1px 0px #E4E5E8;
+}
+
+#header {
+
+    position: absolute;
+    width: 67px;
+    height: 21px;
+    left: 171px;
+    top: 14px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+
+    /* Gray 4 */
+
+    color: #000927;
+}
+
+#back {
+    cursor : pointer;
+
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 10px;
+    top: 13px;
+    background-image: url("/images/icon_arrow_back.png");
+    background-size: cover;
+}
+
+/*알림*/
+#notice-wrapper {
+    position: absolute;
+    width: 410px;
+    height: 54px;
+    left: 0px;
+    top: 73px;
+
+}
+
+#notice-icon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 20px;
+    top: 12px;
+    background-image: url("/images/icon_goal.png");
+    background-size: cover;
+}
+
+#text1 {
+    position: absolute;
+    width: 170px;
+    height: 26px;
+    left: 58px;
+    top: 14px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+
+    /* Gray 4 */
+
+    color: #000927;
+
+}
+
+/* 공부 입력 창 */
+#list-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+
+    position: absolute;
+    width: 370px;
+    height: 145px;
+    left: 20px;
+    top: 135px;
+
+}
+
+.set-goal-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+
+    position: absolute;
+    width: 370px;
+    height: 145px;
+
+    width: 370px;
+    height: 145px;
+
+    background: #FFFFFF;
+    box-shadow: 2px 2px 6px #EBEBEB;
+    border-radius: 12px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.input-subject {
+    position: absolute;
+    width: 338px;
+    height: 48px;
+    left: 10px;
+    top: 16px;
+
+    /* b */
+
+    background: #F3F4F7;
+    border: none;
+    border-radius: 8px;
+    padding-left: 12px;
+}
+
+.input-subject::placeholder {
+    padding-left: 12px;
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #B0B7C1;
+}
+
+.text2 {
+    position: absolute;
+width: 92px;
+height: 29px;
+left: 20px;
+top: 88px;
+
+font-family: 'Pretendard';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+
+/* Gray 4 */
+
+color: #000927;
+}
+
+.hour {
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    left: 155px;
+    top: 88px;
+
+    text-align: center;
+    border: none;
+    border-right: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 31px;
+    /* identical to box height */
+
+    text-align: right;
+    letter-spacing: 0.02em;
+
+    /* Main Color */
+
+    color: #8987FF;
+}
+
+.text3 {
+    position: absolute;
+    width: 20px;
+    height: 31px;
+    left: 200px;
+    top: 84px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 31px;
+    /* identical to box height */
+
+    text-align: right;
+    letter-spacing: 0.02em;
+
+    /* Main Color */
+
+    color: #8987FF;
+
+}
+
+.min {
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    left: 230px;
+    top: 88px;
+
+    text-align: center;
+
+    border: none;
+    border-right: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 31px;
+    /* identical to box height */
+
+    text-align: right;
+    letter-spacing: 0.02em;
+
+    /* Main Color */
+
+    color: #8987FF;
+}
+
+.text4 {
+    position: absolute;
+    width: 20px;
+    height: 31px;
+    left: 272px;
+    top: 84px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 31px;
+    /* identical to box height */
+
+    text-align: right;
+    letter-spacing: 0.02em;
+
+    /* Main Color */
+
+    color: #8987FF;
+
+}
+
+.sec {
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    left: 300px;
+    top: 88px;
+
+    text-align: center;
+
+    border: none;
+    border-right: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 31px;
+    /* identical to box height */
+
+    text-align: right;
+    letter-spacing: 0.02em;
+
+    /* Main Color */
+
+    color: #8987FF;
+}
+
+#plus-btn{
+    /* icon_plus_circle */
+    cursor : pointer;
+
+
+position: absolute;
+width: 54px;
+height: 54px;
+left: 178px;
+top: 300px;
+background-image: url("/images/icon_plus_circle.png");
+    background-size: cover;
+
+}
+
+#start-btn {
+    position: absolute;
+width: 338px;
+height: 56px;
+left: 36px;
+top: 844px;
+
+/* Main Color_1 */
+
+background: #8987FF;
+border-radius: 8px;
+
+font-family: 'Pretendard';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 16px;
+/* identical to box height, or 100% */
+
+text-align: center;
+
+color: #FFFFFF;
+
+display : flex;
+justify-content : center;
+align-items : center;
+
+}
+
+#limit-text{
+    position: absolute;
+    width: 200px;
+    height: 21px;
+    top: 660px;
+
+    text-align: center;
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: #8987FF;
+}

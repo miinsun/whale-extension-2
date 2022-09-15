@@ -1,0 +1,194 @@
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+}
+
+body {
+    background-color: #F2F3F5;
+}
+
+#header-wrapper {
+    position: absolute;
+    width: 410px;
+    height: 49px;
+    left: 0px;
+    top: 0px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 1px 0px #E4E5E8;
+}
+
+#header {
+
+    position: absolute;
+    width: 67px;
+    height: 21px;
+    left: 171px;
+    top: 14px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+
+    /* Gray 4 */
+
+    color: #000927;
+}
+
+#back {
+    cursor: pointer;
+
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 10px;
+    top: 13px;
+    background-image: url("/images/icon_arrow_back.png");
+    background-size: cover;
+}
+
+/*알림*/
+#notice-wrapper {
+    position: absolute;
+    width: 410px;
+    height: 54px;
+    left: 0px;
+    top: 73px;
+
+}
+
+#notice-icon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 20px;
+    top: 12px;
+    background-image: url("/images/icon_routine.png");
+    background-size: cover;
+}
+
+#text1 {
+    position: absolute;
+    width: 170px;
+    height: 26px;
+    left: 58px;
+    top: 14px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+
+    /* Gray 4 */
+
+    color: #000927;
+
+}
+
+#list-wrapper {
+ 
+    position: absolute;
+
+    left: 20px;
+    top: 135px;
+
+
+}
+
+#plus-btn {
+    cursor: pointer;
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    left: 178px;
+    top: 373px;
+    background-image: url("/images/icon_plus_circle.png");
+    background-size: cover;
+}
+
+#start-btn {
+    pointer-events: none;
+    position: absolute;
+    width: 338px;
+    height: 56px;
+    left: 36px;
+    top: 844px;
+
+    /* Main Color_1 */
+
+    background: #D2D0FF;
+    border-radius: 8px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height, or 100% */
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* 리스트  */
+.sub-wrapper {
+    position: absolute;
+
+    width: 370px;
+    height: 66px;
+
+    background: #FFFFFF;
+    box-shadow: 2px 2px 6px #EBEBEB;
+    border-radius: 12px;
+
+}
+
+.sub-name {
+
+padding: 21px 24px;
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height */
+
+
+    /* Gray 4 */
+
+    color: #000927;
+}
+
+.sub-img {
+    
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 322px;
+    top: 21px;
+    background-image: url("/images/icon_x.png");
+    background-size: cover;
+}
+
+.selected {
+    box-sizing: border-box;
+
+width: 370px;
+height: 66px;
+
+background: #FFFFFF;
+/* Main Color_1 */
+
+border: 2px solid #8987FF;
+box-shadow: 2px 2px 6px #EBEBEB;
+border-radius: 12px;
+}

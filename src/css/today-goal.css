@@ -1,0 +1,481 @@
+body {
+    width: 410px;
+    background-color: #F2F3F5;
+}
+
+#capture-area {
+    width: 410px;
+    height: 920px;
+    background-color: #F2F3F5;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#background {
+    background-color: #F2F3F5;
+}
+
+#header-wrapper {
+    position: absolute;
+    width: 410px;
+    height: 49px;
+    left: 0px;
+    top: 0px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 1px 0px #E4E5E8;
+}
+
+#header {
+    position: absolute;
+    width: 83px;
+    height: 21px;
+    left: 163px;
+    top: 14px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+
+    /* Gray 4 */
+
+    color: #000927;
+
+
+}
+
+#back {
+    cursor: pointer;
+
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 10px;
+    top: 13px;
+    background-image: url("/images/icon_arrow_back.png");
+    background-size: cover;
+}
+
+#today {
+    position: absolute;
+    width: 176px;
+    height: 24px;
+    left: 117px;
+    top: 89px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    /* identical to box height, or 100% */
+
+    text-align: center;
+
+    /* Gray 4 */
+
+    color: #000927;
+
+}
+
+#download-btn {
+    cursor: pointer;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 354px;
+    top: 85px;
+
+    background-image: url("/images/icon_save.png");
+    background-size: cover;
+
+}
+
+#display-wrapper {
+    position: absolute;
+    width: 362px;
+    height: 385px;
+    left: 24px;
+    top: 133px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 12px rgba(157, 167, 202, 0.25);
+    border-radius: 8px;
+}
+
+#label1 {
+
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 106px;
+    top: 25px;
+    border-radius: 10px;
+    /* Main Color */
+
+    background: #8987FF;
+}
+
+#lable1-name {
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    left: 134px;
+    top: 25px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+
+
+    /* Main Color */
+
+    color: #8987FF;
+
+
+}
+
+
+#label2 {
+
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 196px;
+    top: 25px;
+    border-radius: 10px;
+
+    background: #F3F4F7;
+}
+
+#lable2-name {
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    left: 224px;
+    top: 25px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+
+
+    /* Gray 1 */
+
+    color: #B0B7C1;
+
+
+}
+
+#list-wrapper {
+    position: absolute;
+    left: 24px;
+    top: 542px;
+}
+
+.sub-wrapper {
+    position: absolute;
+    width: 362px;
+    height: 128px;
+    left: 0px;
+
+    height: 128px;
+
+    background: #FFFFFF;
+    box-shadow: 2px 2px 6px #EBEBEB;
+    border-radius: 12px;
+}
+
+.sub-name {
+    position: absolute;
+    height: 21.33px;
+    left: 48px;
+    top: 15px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+
+    /* Gray 4 */
+
+    color: #000927;
+}
+
+.line {
+    position: absolute;
+    width: 362px;
+    height: 0px;
+    top: 48px;
+
+    border-top: 1px solid #E8E8E8;
+}
+
+.time-text1 {
+    position: absolute;
+    width: 61.33px;
+    height: 19px;
+    left: 16.35px;
+    top: 64px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+
+    /* Gray 2 */
+
+    color: #8B909C;
+}
+
+.study-time {
+    position: absolute;
+    width: 70px;
+    height: 19px;
+    left: 99px;
+    top: 64px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+
+    /* Gray 2 */
+
+    color: #8B909C;
+
+}
+
+.time-text2 {
+    position: absolute;
+    width: 61.33px;
+    height: 19px;
+    left: 16.35px;
+    top: 95px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+
+    /* Gray 2 */
+
+    color: #8B909C;
+}
+
+.away-time {
+    position: absolute;
+    width: 68px;
+    height: 19px;
+    left: 99px;
+    top: 95px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+
+    /* Gray 2 */
+
+    color: #8B909C;
+
+
+}
+
+#c1 {
+    fill: none;
+    stroke: #8987FF;
+    stroke-width: 7;
+    stroke-dasharray: 50 158;
+    /* 2π × 25 ≈ 158 */
+    transform: rotate(-90deg);
+    transform-origin: center;
+    animation: circle-chart-fill 2s;
+}
+
+#c2 {
+    fill: none;
+    stroke: #F3F4F7;
+    stroke-width: 7;
+    stroke-dasharray: 100 158;
+    /* 2π × 25 ≈ 158 */
+    transform: rotate(-90deg);
+    transform-origin: center;
+    animation: circle-chart-fill 2s;
+}
+
+@keyframes circle-chart-fill {
+    from {
+        stroke-dasharray: 0 158;
+        transform: rotate(0deg);
+    }
+}
+
+#circle-img {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    left: 170px;
+    top: 155px;
+    background-image: url("/images/icon_lightning.png");
+    background-size: cover;
+}
+
+#text2 {
+    position: absolute;
+    left: 36.59%;
+    right: 37.8%;
+    top: 190px;
+    bottom: 64.68%;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    /* identical to box height, or 100% */
+
+    text-align: center;
+
+    /* Main Color_1 */
+
+    color: #8987FF;
+}
+
+/* 프로그레스바 */
+#progressbar-wrapper {
+    position: absolute;
+    width: 330px;
+    height: 69px;
+    left: 20px;
+    top: 303px;
+
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 330px;
+    height: 69px;
+    left: 20px;
+    top: 303px;
+
+    background: #FFFFFF;
+    /* Gray 1 */
+
+    border: 1px solid #B8B9BF;
+    border-radius: 12px;
+}
+
+.progress {
+    overflow: hidden;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+    position: absolute;
+
+width: 260px;
+height: 14px;
+left: 16px;
+top: 42px;
+
+    /* bg */
+
+    background: #F2F3F5;
+    border-radius: 12px;
+
+}
+
+.progress-bar {
+    width: 0;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    background-color: #FFEF93;
+}
+
+.progress-striped .progress-bar {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-size: 40px 40px;
+}
+
+#percent {
+    position: absolute;
+width: 22px;
+height: 14px;
+left: 280px;
+top: 42px;
+
+font-family: 'Pretendard';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 14px;
+
+color: #000927;
+
+}
+
+#text3 {
+    position: absolute;
+    width: 43px;
+    height: 19px;
+    left: 16px;
+    top: 18px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+
+    /* Gray 2 */
+
+    color: #8B909C;
+
+}
+
+.success-img {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 17px;
+    top: 14px;
+    background-image: url("/images/icon_check_circle.png");
+    background-size: cover;
+}
+
+.fail-img {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 17px;
+    top: 14px;
+    background-image: url("/images/icon_x_circle.png");
+    background-size: cover;
+}

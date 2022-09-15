@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/today-goal.css">
+    <script src="../js/today-goal.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>today-goal</title>
+</head>
+
+<body>
+    <div id="capture-area">
+        <div id="background">
+            <div id="header-wrapper">
+                <div id="back"></div>
+                <div id="header">목표 달성률</div>
+            </div>
+
+            <div id="today"></div>
+            <div id="download-btn"></div>
+            <div id="share-btn"></div>
+
+            <div id="display-wrapper">
+                <div id="label1"></div>
+                <div id="lable1-name">열공중</div>
+                <div id="label2"></div>
+                <div id="lable2-name">쉬는중</div>
+
+                <!-- 도넛 그래프 -->
+                <svg id="circle-base" viewBox="0 0 100 100">
+                    <circle id="c2" r="25" cx="50" cy="50" />
+                    <circle id="c1" r="25" cx="50" cy="50" />
+                    <text id="text" x="50" y="50" text-anchor="middle">
+
+                    </text>
+                    <div id="circle-img"></div>
+                    <div id="text2">00:50:00</div>
+                </svg>
+                <!-- 프로그레스 바 -->
+                <div id="progressbar-wrapper">
+                    <div class="progress progress-striped">
+                        <div id="progressBar" class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80"
+                            aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                        </div>
+
+                    </div>
+
+                    <div id="percent"></div>
+                    <div id="text3">달성률</div>
+                </div>
+            </div>
+
+
+            <div id="list-wrapper">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

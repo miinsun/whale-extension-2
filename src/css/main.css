@@ -1,0 +1,343 @@
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'GmarketSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+
+}
+
+body {
+    background-color: #F2F3F5;
+}
+
+/* 로고 */
+#header-wrapper {
+
+    position: absolute;
+    width: 410px;
+    height: 49px;
+    left: 0px;
+    top: 0px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 1px 0px #E9E9EA;
+}
+
+#logo {
+    position: absolute;
+    left: 4.88%;
+    right: 71.95%;
+    top: 26.53%;
+    bottom: 26.53%;
+    background-image: url("/images/Logo.png");
+    background-size: cover;
+}
+
+/* 공부 시작하기 */
+#helloWrapper {
+    position: absolute;
+    width: 374px;
+    height: 390px;
+    left: 18px;
+    top: 73px;
+
+    background: #FFFFFF;
+    box-shadow: 2px 2px 6px #EBEBEB;
+    border-radius: 16px;
+
+}
+
+#hello {
+    position: absolute;
+    width: 204px;
+    height: 80px;
+    left: 28px;
+    top: 32px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 40px;
+
+    letter-spacing: -0.02em;
+
+
+    color: #222222;
+}
+
+#set-goal-img {
+    position: absolute;
+    width: 186px;
+    height: 186px;
+    left: 166px;
+    top: 115px;
+
+    background-image: url("/images/illust_hand.png");
+    background-size: cover;
+}
+
+#set-goal-btn-wrapper {
+    cursor: pointer;
+    position: absolute;
+    width: 338px;
+    height: 56px;
+    left: 18px;
+    top: 314px;
+
+    background: #FFEE8C;
+    border-radius: 8px;
+}
+
+#set-goal-main {
+    position: absolute;
+    width: px;
+    height: 16px;
+    left: 126px;
+    top: 20px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+
+
+    color: #222222;
+}
+
+/* 루틴 만들기 */
+#routine-wrapper {
+    position: absolute;
+    width: 374px;
+    height: 165px;
+    left: 18px;
+    top: 483px;
+
+    background: #8987FF;
+    box-shadow: 2px 2px 6px #EBEBEB;
+    border-radius: 16px;
+}
+
+#routine-main {
+    position: absolute;
+    width: 163px;
+    height: 60px;
+    left: 28px;
+    top: 22px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+
+    color: #FFFFFF;
+}
+
+#routine-img {
+    position: absolute;
+    width: 165px;
+    height: 165px;
+    left: 199px;
+    top: 0px;
+
+    background-image: url("/images/illust_clock.png");
+    background-size: cover;
+
+}
+
+/* 루틴 버튼 */
+#routine-btn-wrapper {
+    cursor: pointer;
+
+    position: absolute;
+    width: 92px;
+    height: 46px;
+    left: 28px;
+    top: 96px;
+
+    background: #7674E8;
+    border-radius: 8px;
+}
+
+#routine-btn-main {
+    position: absolute;
+    width: 60px;
+    height: 16px;
+    left: 16px;
+    top: 15px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height, or 100% */
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+/* 목표 달성률 */
+#goal-wrapper {
+    position: absolute;
+    width: 374px;
+    height: 223px;
+    left: 18px;
+    top: 668px;
+
+    background: #FFFFFF;
+    box-shadow: 2px 2px 6px #EBEBEB;
+    border-radius: 16px;
+}
+
+#goal-main {
+    position: absolute;
+    width: 101px;
+    height: 26px;
+    left: 28px;
+    top: 24px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+
+    color: #222222;
+}
+
+/* 일간 공부량 */
+#today-goal-wrapper {
+    cursor: pointer;
+}
+
+#today-goal-img {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    left: 28px;
+    top: 156px;
+
+    background-image: url("/images/icon_month.png");
+    background-size: cover;
+}
+
+#today-goal-main {
+    position: absolute;
+    width: 153px;
+    height: 21px;
+    left: 93px;
+    top: 72px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+
+    /* Gray 4 */
+
+    color: #222222;
+
+}
+
+#today-goal-sub {
+    position: absolute;
+    width: 172px;
+    height: 17px;
+    left: 93px;
+    top: 97px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+
+    color: #B5B5B5;
+}
+
+#today-goal-btn {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 330px;
+    top: 81px;
+
+    background-image: url("/images/icon_right.png");
+    background-size: cover;
+}
+
+/* 월간 공부량 */
+#month-goal-wrapper {
+    cursor: pointer;
+}
+
+#month-goal-img {
+
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    left: 28px;
+    top: 70px;
+    background-image: url("/images/icon_day.png");
+    background-size: cover;
+}
+
+#month-goal-main {
+    position: absolute;
+    width: 153px;
+    height: 21px;
+    left: 93px;
+    top: 158px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+
+    /* Gray 4 */
+
+    color: #222222;
+
+
+}
+
+#month-goal-sub {
+    position: absolute;
+    width: 172px;
+    height: 17px;
+    left: 93px;
+    top: 183px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+
+    color: #B5B5B5;
+
+}
+
+#month-goal-btn {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 330px;
+    top: 167px;
+
+    background-image: url("/images/icon_right.png");
+    background-size: cover;
+}

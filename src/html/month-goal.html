@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/month-goal.css">
+    <script src="../js/month-goal.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>month-goal</title>
+
+
+</head>
+
+<body>
+    <div id="header-wrapper">
+        <div id="back"></div>
+        <div id="header">월간 목표 달성률</div>
+    </div>
+
+
+    <div id="wrapper">
+        <h3 id="monthHeader"></h3>
+
+        <!-- date picker -->
+        <div class="container-calendar">
+            <table class="table-calendar" id="calendar">
+                <thead id="thead-month"></thead>
+                <tbody id="calendar-body"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- 선택된 요일에 관한 정보 출력 -->
+    <div id = "picked-wrapper">
+        <div id="date-picked"></div>
+        <div id="study-time-wrapper">
+            <div id="text1">공부 시간</div>
+            <div id="study-time"></div>
+        </div>
+        <div id="rest-time-wrapper">
+            <div id="text2">쉬는 시간</div>
+            <div id="rest-time"></div>
+        </div>
+    </div>
+</body>
+
+</html>
