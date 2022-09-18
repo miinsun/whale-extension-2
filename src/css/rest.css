@@ -2,23 +2,24 @@
   font-family: 'Pretendard';
   src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
 }
-body{
+
+body {
   background-color: #FFFFFF;
 }
 
 #header-wrapper {
   position: absolute;
-width: 410px;
-height: 49px;
-left: 0px;
-top: 0px;
+  width: 410px;
+  height: 49px;
+  left: 0px;
+  top: 0px;
 
-background: #FFFFFF;
-box-shadow: 0px 1px 0px #E4E5E8;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 0px #E4E5E8;
 }
 
-#back{
-  cursor : pointer;
+#back {
+  cursor: pointer;
 
   position: absolute;
   width: 24px;
@@ -28,23 +29,24 @@ box-shadow: 0px 1px 0px #E4E5E8;
   background-image: url("/images/icon_arrow_back.png");
   background-size: cover;
 }
+
 #header {
 
   position: absolute;
-width: 47px;
-height: 21px;
-left: 181px;
-top: 14px;
+  width: 47px;
+  height: 21px;
+  left: 181px;
+  top: 14px;
 
-font-family: 'Pretendard';
-font-style: normal;
-font-weight: 600;
-font-size: 18px;
-line-height: 21px;
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
 
-/* Gray 4 */
+  /* Gray 4 */
 
-color: #222222;
+  color: #222222;
 
 }
 
@@ -58,7 +60,7 @@ color: #222222;
   transform-origin: center;
 }
 
-#circle_progress{
+#circle_progress {
   fill: none;
   stroke: #8987FF;
   stroke-width: 0.8px;
@@ -75,25 +77,26 @@ color: #222222;
   fill: #8987FF;
 }
 
-#left-btn{
+#left-btn {
   position: absolute;
-left: 126px;
-top: 89px;
-width: 24px;
-height: 24px;
+  left: 126px;
+  top: 89px;
+  width: 24px;
+  height: 24px;
 
   background-image: url("/images/icon_left.png");
   background-size: cover;
 }
-#right-btn{
+
+#right-btn {
   position: absolute;
-left: 261px;
-top: 89px;
-width: 24px;
-height: 24px;
+  left: 261px;
+  top: 89px;
+  width: 24px;
+  height: 24px;
 
   background-image: url("/images/icon_right.png");
-    background-size: cover;
+  background-size: cover;
 }
 
 #main {
@@ -130,67 +133,67 @@ height: 24px;
 }
 
 #end-btn {
-  cursor : pointer;
+  cursor: pointer;
   box-sizing: border-box;
 
-/* Auto layout */
+  /* Auto layout */
 
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 19px 41px;
-gap: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 19px 41px;
+  gap: 10px;
 
-position: absolute;
-width: 155px;
-height: 59px;
-left: 133px;
-top: 503px;
+  position: absolute;
+  width: 155px;
+  height: 59px;
+  left: 133px;
+  top: 503px;
 
-background: #FFFFFF;
-/* Main Color */
+  background: #FFFFFF;
+  /* Main Color */
 
-border: 2px solid #8987FF;
-border-radius: 100px;
+  border: 2px solid #8987FF;
+  border-radius: 100px;
 
-font-family: 'Pretendard';
-font-style: normal;
-font-weight: 600;
-font-size: 18px;
-line-height: 21px;
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
 
-/* Main Color */
+  /* Main Color */
 
-color: #8987FF;
+  color: #8987FF;
 
 
-/* Inside auto layout */
+  /* Inside auto layout */
 
-flex: none;
-order: 0;
-flex-grow: 0;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 
-#sub-name1{
+#sub-name1 {
   position: absolute;
-left: 171px;
-top: 89px;
+  left: 171px;
+  top: 89px;
 
-height: 24px;
+  height: 24px;
 
-font-family: 'Pretendard';
-font-style: normal;
-font-weight: 600;
-font-size: 24px;
-line-height: 24px;
-/* identical to box height, or 100% */
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  /* identical to box height, or 100% */
 
-text-align: center;
+  text-align: center;
 
-/* Gray 4 */
+  /* Gray 4 */
 
-color: #000927;
+  color: #000927;
 
 
 }

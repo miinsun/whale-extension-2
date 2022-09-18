@@ -3,7 +3,7 @@
     src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
 }
 
-body{
+body {
     background-color: #F2F3F5;
 }
 
@@ -19,7 +19,7 @@ body{
 }
 
 #back {
-    cursor : pointer;
+    cursor: pointer;
 
     position: absolute;
     width: 24px;
@@ -52,22 +52,22 @@ body{
 
 #wrapper {
     position: absolute;
-width: 370px;
-height: 321px;
-left: 20px;
-top: 88px;
+    width: 370px;
+    height: 321px;
+    left: 20px;
+    top: 88px;
 
-background: #FFFFFF;
-box-shadow: 2px 2px 6px #EBEBEB;
-border-radius: 12px;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 6px #EBEBEB;
+    border-radius: 12px;
 }
 
 .container-calendar {
     position: absolute;
-width: 310px;
-height: 224px;
-left: 30px;
-top: 70px;
+    width: 310px;
+    height: 224px;
+    left: 30px;
+    top: 70px;
 
 }
 
@@ -134,24 +134,24 @@ top: 70px;
 }
 
 #monthHeader {
-   position: absolute;
-width: 101px;
-height: 24px;
-left: 134px;
-top: 20px;
+    position: absolute;
+    width: 101px;
+    height: 24px;
+    left: 134px;
+    top: 20px;
 
-font-family: 'Pretendard';
-font-style: normal;
-font-weight: 600;
-font-size: 24px;
-line-height: 24px;
-/* identical to box height, or 100% */
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    /* identical to box height, or 100% */
 
-text-align: center;
+    text-align: center;
 
-/* Gray 4 */
+    /* Gray 4 */
 
-color: #000927;
+    color: #000927;
 
 }
 
@@ -287,4 +287,22 @@ color: #000927;
     /* Gray 4 */
 
     color: #222222;
+}
+
+#picked-null{
+    position: absolute;
+    height: 21px;
+    left: 115px;
+    top: 500px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    display: none;
+
+    /* Gray 3 */
+
+    color: #8987FF;
 }

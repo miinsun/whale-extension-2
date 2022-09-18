@@ -22,7 +22,7 @@ window.onload = function () {
     // 쉬는 시간 저장
     studyOn.today.map(x => {
       if (x.name == sub.name) {
-        x.rest = cnt - 1 ;
+        x.rest = cnt - 1;
       }
     })
 
@@ -56,7 +56,7 @@ function stopWatch(sub) {
   }, 1000);
 }
 
-function printTime(totalSec){
+function printTime(totalSec) {
   var min = parseInt(totalSec / 60);
   var hour = parseInt(min / 60);
   var sec = (totalSec % 60);

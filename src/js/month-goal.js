@@ -11,16 +11,6 @@ window.onload = function () {
   var monthsArr = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"];
   var day = String(today.getDate()).padStart(2, '0');
 
-  // 오늘 공부량 계산하기
-  studyOn.calendar.map(x => {
-    if (x.day == day) {
-      studyOn.today.map(y => {
-        x.study += y.study;
-        x.rest += y.rest;
-      })
-    }
-  })
-
   // 뒤로가기
   document.getElementById('back').onclick = function () {
     history.back();
@@ -41,6 +31,7 @@ window.onload = function () {
 
   var picked = document.getElementById("picked-wrapper");
   picked.style.display = "none";
+  document.getElementById("day-"+today.getDate()).click();
 
   function showCalendar(month, year) {
     var firstDay = new Date(year, month).getDay();
@@ -65,6 +56,7 @@ window.onload = function () {
           break;
         } else {
           cell = document.createElement("td");
+          cell.setAttribute("id", "day-"+date);
           cell.setAttribute("data-date", date);
           cell.setAttribute("data-month", month + 1);
           cell.setAttribute("data-year", year);
@@ -73,12 +65,11 @@ window.onload = function () {
           cell.className = "date-picker";
           if (date > 10) {
             cell.innerHTML = "<span>" + date + "</span>";
-
           }
           else {
             cell.innerHTML = "<span>&nbsp;" + date + "&nbsp;</span>";
-
           }
+
           cell.onclick = function (event) {
             picked.style.display = "none";
             var dates = document.querySelectorAll(".date-picker");
@@ -95,21 +86,20 @@ window.onload = function () {
             // date 클릭 시, 출력
             datePicked.innerHTML = monthsArr[month] + "." + date + " " + "(" + getTodayLabel(day) + ")";
             var pickedDay = studyOn.calendar.find(x => x.day == date);
+
             // 공부 시작이 없을 시
             if (pickedDay == null) {
-
+              document.getElementById('picked-null').style.display="block";
             }
             else {
               picked.style.display = "block";
-
+              document.getElementById('picked-null').style.display="none";
               document.getElementById('study-time').innerHTML = printTime(pickedDay.study);
               document.getElementById('rest-time').innerHTML = printTime(pickedDay.rest);
             }
-
           }
 
           if (date === today.getDate() && year === today.getFullYear() && month === today.getMonth()) {
-
             cell.className = "date-picker selected";
           }
 

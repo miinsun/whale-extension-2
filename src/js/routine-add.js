@@ -48,7 +48,6 @@ window.onload = function () {
 
       studyOn.progressList = list;
       localStorage.setItem("study-on", JSON.stringify(studyOn));
-      alert('목표 설정 완료! 열공합시다');
       history.back();
     }
   }

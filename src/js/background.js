@@ -1,4 +1,4 @@
-chrome.runtime.onMessage.addListener(data => {
+whale.runtime.onMessage.addListener(data => {
   if (data.type === 'notification') {
     chrome.notifications.create('', data.options);
   }
@@ -6,8 +6,9 @@ chrome.runtime.onMessage.addListener(data => {
 
 whale.runtime.onMessage.addListener(request => {
   if (request.action === 'openLocalPage') {
-      whale.sidebarAction.show({
-          url: whale.runtime.getURL('../html/study.html')
-      });
+    whale.sidebarAction.show({
+      url: whale.runtime.getURL('../html/study.html')
+    });
   }
 });
+

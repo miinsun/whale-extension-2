@@ -18,7 +18,7 @@ window.onload = function () {
     var studyOn = month_init();
   }
   // 하루에 한번씩 date 초기화
-  else if(studyOn.date.day != day){
+  else if (studyOn.date.day != day) {
     studyOn = day_init();
   }
 
@@ -34,7 +34,7 @@ function link() {
   }
 
   // 루틴 페이지 이동
-  document.getElementById('routine-btn-wrapper').onclick = function(){
+  document.getElementById('routine-btn-wrapper').onclick = function () {
     location.href = "routine-list.html";
   }
 
@@ -79,7 +79,7 @@ function day_init() {
       "month": month,
       "day": day
     },
-    "today": studyOn.today,
+    "today": [],
     "calendar": studyOn.calendar,
     "routines": studyOn.routines
   }
@@ -103,14 +103,14 @@ function getTodayLabel() {
 }
 
 //알림 권한 요청
-function getNotificationPermission(){ 
+function getNotificationPermission() {
   if (!("Notification" in window)) {
     alert("데스크톱 알림을 지원하지 않는 브라우저입니다.");
   }
   // 데스크탑 알림 권한 요청    
-  Notification.requestPermission(function(result){
+  Notification.requestPermission(function (result) {
     // 권한 거절        
-    if(result == 'denied'){
+    if (result == 'denied') {
       alert('알림을 차단하셨습니다.\n브라우저의 사이트 설정에서 변경하실 수 있습니다.');
       return false;
     }

@@ -9,7 +9,6 @@ window.onload = function () {
     var plusBtn = document.getElementById('plus-btn');
     var startBtn = document.getElementById('start-btn');
 
-
     var listArea = document.getElementById('list-wrapper');
     var cnt = 0;
     // '추가' 버튼 클릭 시, 리스트 추가, progress list 만들기
@@ -109,21 +108,20 @@ window.onload = function () {
             }
         }
 
-        if(isOk == true){
-            for(var subject of list){
+        if (isOk == true) {
+            for (var subject of list) {
                 studyOn.today.push(
                     {
-                      study: 0,
-                      rest: 0,
-                      goal: subject.goal,
-                      name: subject.name
+                        study: 0,
+                        rest: 0,
+                        goal: subject.goal,
+                        name: subject.name
                     }
-                  )
+                )
             }
 
             studyOn.progressList = list;
             localStorage.setItem("study-on", JSON.stringify(studyOn));
-            alert('목표 설정 완료! 열공합시다');
             location.href = "./study.html?idx=" + 1;
         }
     }

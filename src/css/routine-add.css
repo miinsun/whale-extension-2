@@ -3,7 +3,7 @@
     src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
 }
 
-body{
+body {
     background-color: #F2F3F5;
 }
 
@@ -38,7 +38,7 @@ body{
 }
 
 #back {
-    cursor : pointer;
+    cursor: pointer;
 
     position: absolute;
     width: 24px;
@@ -113,22 +113,22 @@ body{
 
 .text2 {
     position: absolute;
-width: 92px;
-height: 29px;
-left: 20px;
-top: 88px;
+    width: 92px;
+    height: 29px;
+    left: 20px;
+    top: 88px;
 
-font-family: 'Pretendard';
-font-style: normal;
-font-weight: 600;
-font-size: 24px;
-line-height: 29px;
-/* identical to box height */
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
 
 
-/* Gray 4 */
+    /* Gray 4 */
 
-color: #000927;
+    color: #000927;
 }
 
 .hour {
@@ -268,52 +268,52 @@ color: #000927;
     color: #8987FF;
 }
 
-#plus-btn{
+#plus-btn {
     /* icon_plus_circle */
-    cursor : pointer;
+    cursor: pointer;
 
 
-position: absolute;
-width: 54px;
-height: 54px;
-left: 178px;
-top: 300px;
-background-image: url("/images/icon_plus_circle.png");
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    left: 178px;
+    top: 300px;
+    background-image: url("/images/icon_plus_circle.png");
     background-size: cover;
 
 }
 
 #start-btn {
-    cursor : pointer;
+    cursor: pointer;
     position: absolute;
-width: 338px;
-height: 56px;
-left: 36px;
-top: 844px;
+    width: 338px;
+    height: 56px;
+    left: 36px;
+    top: 844px;
 
-/* Main Color_1 */
+    /* Main Color_1 */
 
-background: #8987FF;
-border-radius: 8px;
+    background: #8987FF;
+    border-radius: 8px;
 
-font-family: 'Pretendard';
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 16px;
-/* identical to box height, or 100% */
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height, or 100% */
 
-text-align: center;
+    text-align: center;
 
-color: #FFFFFF;
+    color: #FFFFFF;
 
-display : flex;
-justify-content : center;
-align-items : center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
-#limit-text{
+#limit-text {
     position: absolute;
     width: 200px;
     height: 21px;
@@ -330,20 +330,20 @@ align-items : center;
 
 #routine-name-input {
     position: absolute;
-width: 114px;
-height: 26px;
-left: 148px;
-top: 12px;
+    width: 114px;
+    height: 26px;
+    left: 148px;
+    top: 12px;
 
-font-family: 'Pretendard';
-font-style: normal;
-font-weight: 600;
-font-size: 22px;
-line-height: 26px;
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
 
-/* Gray 1 */
+    /* Gray 1 */
 
-color: #B8B9BF;
+    color: #B8B9BF;
 
     background: #F3F4F7;
     border: none;
@@ -352,21 +352,21 @@ color: #B8B9BF;
 
 #routine-name-input::placeholder {
     font-family: 'Pretendard';
-font-style: normal;
-font-weight: 600;
-font-size: 22px;
-line-height: 26px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
 
-/* Gray 1 */
+    /* Gray 1 */
 
-color: #B8B9BF;
+    color: #B8B9BF;
 }
 
-#routine-name-wrapper{
+#routine-name-wrapper {
     position: absolute;
-width: 410px;
-height: 54px;
-left: 0px;
-top: 73px;
+    width: 410px;
+    height: 54px;
+    left: 0px;
+    top: 73px;
 
 }

@@ -19,7 +19,7 @@ function link() {
   }
 }
 
-function makeList(){
+function makeList() {
   var plusBtn = document.getElementById('plus-btn');
   plusBtn.style.top = 150 + (70 * studyOn.routines.length + 1) + 'px';
 
@@ -34,18 +34,18 @@ function makeList(){
     // subWrapper에 들어갈 요소 구현
     var subImg = document.createElement('div');
     subImg.setAttribute('class', 'sub-img');
-    subImg.setAttribute('id', 'cancle-btn'+ (cnt+1));
+    subImg.setAttribute('id', 'cancle-btn' + (cnt + 1));
     var subName = document.createElement('div');
     subName.setAttribute('class', 'sub-name');
     subName.innerHTML = x.name;
- 
+
     // subWrapper 조립
     subWrapper.appendChild(subImg);
     subWrapper.appendChild(subName);
 
     // 온 클릭 이벤트 처리
     var startBtn = document.getElementById('start-btn');
-    subWrapper.onclick = function(event) {
+    subWrapper.onclick = function (event) {
       startBtn.style.background = '#8987FF';
       startBtn.style.pointerEvents = 'auto'
       var list = document.querySelectorAll(".sub-wrapper");
@@ -58,7 +58,7 @@ function makeList(){
       target.classList.add("selected");
       targetName = target.childNodes[1].innerHTML;
 
-      
+
     }
     listArea.append(subWrapper);
 
@@ -68,17 +68,17 @@ function makeList(){
 }
 
 
-function deleteRoutine(){
+function deleteRoutine() {
   // 삭제버튼 활성화 하기
-  for(var i = 1; i <= studyOn.routines.length; i++){
-    document.getElementById('cancle-btn'+i).onclick = function (e) {
+  for (var i = 1; i <= studyOn.routines.length; i++) {
+    document.getElementById('cancle-btn' + i).onclick = function (e) {
       var targetId = e.target.id.slice(-1);
-      studyOn.routines.splice(targetId-1, 1)
+      studyOn.routines.splice(targetId - 1, 1)
       localStorage.setItem("study-on", JSON.stringify(studyOn));
       location.reload();
     }
   }
-      
+
 }
 
 // 같은 이름의 루틴을 찾아 실행
@@ -93,21 +93,21 @@ function startRoutine() {
         list = x.list;
       }
     })
-    
-    for(var subject of list){
+
+    for (var subject of list) {
       studyOn.today.push(
-          {
-            study: 0,
-            rest: 0,
-            goal: subject.goal,
-            name: subject.name
-          }
-        )
-  }
+        {
+          study: 0,
+          rest: 0,
+          goal: subject.goal,
+          name: subject.name
+        }
+      )
+    }
 
     console.log(studyOn);
     localStorage.setItem("study-on", JSON.stringify(studyOn));
-    
+
     alert('목표 설정 완료! 열공합시다');
     location.href = "./study.html?idx=" + 1;
   }

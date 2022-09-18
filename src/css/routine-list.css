@@ -89,7 +89,7 @@ body {
 }
 
 #list-wrapper {
- 
+
     position: absolute;
 
     left: 20px;
@@ -154,7 +154,7 @@ body {
 
 .sub-name {
 
-padding: 21px 24px;
+    padding: 21px 24px;
     font-family: 'Pretendard';
     font-style: normal;
     font-weight: 500;
@@ -169,7 +169,7 @@ padding: 21px 24px;
 }
 
 .sub-img {
-    
+
     position: absolute;
     width: 24px;
     height: 24px;
@@ -182,13 +182,13 @@ padding: 21px 24px;
 .selected {
     box-sizing: border-box;
 
-width: 370px;
-height: 66px;
+    width: 370px;
+    height: 66px;
 
-background: #FFFFFF;
-/* Main Color_1 */
+    background: #FFFFFF;
+    /* Main Color_1 */
 
-border: 2px solid #8987FF;
-box-shadow: 2px 2px 6px #EBEBEB;
-border-radius: 12px;
+    border: 2px solid #8987FF;
+    box-shadow: 2px 2px 6px #EBEBEB;
+    border-radius: 12px;
 }

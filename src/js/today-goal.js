@@ -4,6 +4,7 @@ var studyOn = JSON.parse(localStorage.getItem("study-on"));
 
 window.onload = function () {
   download();
+
   // 뒤로가기
   document.getElementById('back').onclick = function () {
     history.back();
@@ -12,37 +13,50 @@ window.onload = function () {
   // display
   document.getElementById('today').innerText = studyOn.date.year + "." + studyOn.date.month + "." + studyOn.date.day + "(" + getTodayLabel() + ")";
 
-  var totalStudy = 0, totalRest = 0, totalGoal = 0;
-  studyOn.today.map(x => {
-    totalStudy += x.study;
-    totalRest += x.rest;
-    totalGoal += x.goal;
-  })
-
-  document.getElementById('text2').innerHTML = printTime(totalStudy);
-
-  // 원 비율 변경하기
-  // 공부비율
-  var c1 = document.getElementById('c1');
-  var c1Size = (totalStudy / (totalStudy + totalRest)) * 158;
-  c1.style.strokeDasharray = c1Size + " 158";
-
-  // 쉬는 시간 비율
-  var c2 = document.getElementById('c2');
-  var c2Size = c1Size + (totalRest / (totalStudy + totalRest)) * 158;
-  c2.style.strokeDasharray = c2Size + " 158";
-
-  // 프로그레스바 설정
-  var progressBar = document.getElementById('progressBar');
-  console.log(totalStudy / totalGoal);
-  progressBar.style.width = (totalStudy / totalGoal) * 100 + "%";
-  progressBar.max = totalGoal;
-
-  // 프로그레스바 아이콘 설정
-  var per = document.getElementById('percent');
-  per.innerHTML = parseInt(totalStudy / totalGoal * 100) + "%";
-
-  makeList();
+  // 아직 진행한 공부가 없을 때
+  if(studyOn.today.length == 0){
+    // 목표 설정하기
+    document.getElementById('start-btn-wrapper').onclick = function () {
+      location.href = "set-goal.html";
+    }
+    document.getElementById("display-wrapper").style.display = "none";
+    document.getElementById('download-btn').style.display = "none";
+    
+  }
+  else{
+    document.getElementById("none-study-wrapper").style.display = "none";
+    var totalStudy = 0, totalRest = 0, totalGoal = 0;
+    studyOn.today.map(x => {
+      totalStudy += x.study;
+      totalRest += x.rest;
+      totalGoal += x.goal;
+    })
+  
+    document.getElementById('text2').innerHTML = printTime(totalStudy);
+  
+    // 원 비율 변경하기
+    // 공부비율
+    var c1 = document.getElementById('c1');
+    var c1Size = (totalStudy / (totalStudy + totalRest)) * 158;
+    c1.style.strokeDasharray = c1Size + " 158";
+  
+    // 쉬는 시간 비율
+    var c2 = document.getElementById('c2');
+    var c2Size = c1Size + (totalRest / (totalStudy + totalRest)) * 158;
+    c2.style.strokeDasharray = c2Size + " 158";
+  
+    // 프로그레스바 설정
+    var progressBar = document.getElementById('progressBar');
+    progressBar.style.width = (totalStudy / totalGoal) * 100 + "%";
+    progressBar.max = totalGoal;
+  
+    // 프로그레스바 아이콘 설정
+    var per = document.getElementById('percent');
+    per.innerHTML = parseInt(totalStudy / totalGoal * 100) + "%";
+  
+    makeList();
+  }
+ 
 }
 
 // 요일 구하기
@@ -129,8 +143,8 @@ function download() {
   var downBtn = document.getElementById('download-btn');
   downBtn.onclick = function () {
     html2canvas(document.body).then(canvas => {
-      saveAs(canvas.toDataURL('image/jpg'), studyOn.date.year + "_" + 
-      studyOn.date.month + "_" + studyOn.date.day + "_studyon.jpg"); //다운로드 되는 이미지 파일 이름 지정
+      saveAs(canvas.toDataURL('image/jpg'), studyOn.date.year + "_" +
+        studyOn.date.month + "_" + studyOn.date.day + "_studyon.jpg"); //다운로드 되는 이미지 파일 이름 지정
     });
   };
 }

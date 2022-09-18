@@ -19,27 +19,16 @@ window.onload = function () {
   // 좌우 버튼 이동 활성화
   idxChange(idx);
 
-  // 뒤로가기
-  document.getElementById('back').onclick = function () {
-    saveTimer();
-    history.back();
-  }
-
-
   // 휴식 이동
   document.getElementById('rest-btn').onclick = function () {
     saveTimer();
-
     location.href = "./rest.html?idx=" + idx;
   }
 
   // 중단 -> 홈으로
   document.getElementById('stop-btn').onclick = function () {
-
     delete studyOn.progressList;
-
     saveTimer();
-
     location.href = "main.html";
   }
 
@@ -130,11 +119,28 @@ function idxChange(index) {
   }
 }
 
-function saveTimer(){
+function saveTimer() {
   clearInterval(timer);
+  
   studyOn.today.map(x => {
     if (x.name == sub.name) {
       x.study = cnt - 1;
+    }
+  })
+
+  // 월간 공부량 계산하기
+  studyOn.calendar.map(x => {
+    if (x.day == day) {
+      var totalStudy = 0;
+      var totalRest = 0;
+      
+      studyOn.today.map(y => {
+        totalStudy += y.study;
+        totalRest += y.rest;
+      })
+
+      x.study = totalStudy;
+      x.rest = totalRest;
     }
   })
 
